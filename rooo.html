@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majestic Palace Resort</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header >
+  <img src="hotel.jpg" alt="Hotel Logo" height="50">
+</header>
+<!--nav 11111111111-->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid d-flex align-items-center">
+
+    <!-- اللوجو + الاسم -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="hotel.jpg" alt="Majestic Palace logo" class="brand-logo me-2">
+      <span class="fw-bold">Majestic Palace Resort</span>
+    </a>
+
+    <!-- زرار الموبايل -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Majestic Palace</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link active text-white" href="#">Homepage</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Reservation</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Destinations</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Sharm el-Sheikh</a></li>
+              <li><a class="dropdown-item" href="#">Makadi Bay</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Marsa Alam</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- welcome pic Section -->
+<section class="hero position-relative text-white text-center">
+  <img src="hotel.jpg" class="img-fluid w-100" alt="Hotel" style="max-height:600px; object-fit:cover;">
+  <div class="hero-text position-absolute top-50 start-50 translate-middle">
+    <p class="lead">The most vibrant family resort...</p>
+    <h1 class="fw-bold">Majestic Palace Resort</h1>
+  </div>
+</section>
+
+<!-- Booking Bar -->
+<section class="bg-dark text-white py-3">
+  <div class="container">
+    <form class="row g-2 align-items-center">
+      <div class="col-md">
+        <label>Hotels</label>
+        <select class="form-select">
+          <option>Majestic Palace resort </option>
+        </select>
+      </div>
+      <div class="col-md">
+        <label>Arrival Date</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md">
+        <label>Departure Date</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md">
+        <label>Rooms</label>
+        <select class="form-select"><option>1</option></select>
+      </div>
+      <div class="col-md">
+        <label>Adults</label>
+        <select class="form-select"><option>1</option></select>
+      </div>
+      <div class="col-md">
+        <label>Children</label>
+        <select class="form-select"><option>0</option></select>
+      </div>
+      <div class="col-md">
+        <label>Promo Code</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-12 text-center mt-2">
+        <button class="btn btn-success">Book Now</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2>WELCOME TO</h2>
+    <h1 class="fw-bold">Majestic Palace Resort</h1>
+  </div>
+</section>
+<!-- reception pic-->
+<div style="text-align:center;">
+  <img src="reception.jpg" alt="reception pic">
+</div>
+<br/>
+<hr/>
+
+<!--Exciting Modern Experiences-->
+<section class="py-5 text-center">
+  <div>
+    <h1> <b>Exciting Modern Experiences</b></h1>
+    <h2>Indulge in iconic hospitality and hotel variations</h2>
+
+  </div>
+</section>
+
+<!--cards branches whith title-->
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <img src="sharm.jpg"class="card-img-top"/>
+      <div class="card-body">
+        <h2 class="card-title"><b>Majestic Palace Resort Sharm el-Sheikh</b></h2>
+        <h4 class="card-text">A Luxury 5-stars beach properity right on the Red Sea.</h4>
+        <a href="#" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <img src="makadi1.jpg"class="card-img-top"/>
+      <div class="card-body">
+        <h2 class="card-title"> <b>Majestic Palace Resort Makadi Bay</b></h2>
+        <h4 class="card-text">Unwinding adventures for the whole family members.</h4>
+        <a href="#" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<hr/>
+<!--Unforgettable Experiences-->
+<section class="py-5 text-center">
+  <div>
+    <h1> <b>Unforgettable Experiences</b></h1>
+    <h2>Explore the most fun activities in unique holidays</h2>
+  </div>
+</section>
+  <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <img src="spa.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <img src="pangalw.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <img src="beach2.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <img src="aqua park.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+</div>
+
+<br/>
+<hr/>
+    <!--our rooms and suits-->
+ <section class="py-5 text-center">
+  <div>
+    <h1> <b>Our Rooms &  Suites </b></h1>
+  </div>
+ </section>
+    
+    <!--rooms-->
+  <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <img src="room4.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <img src="suites.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+</div>
+
+<br/>
+<hr/>
+<!--resturantes-->
+
+<section class="py-5 text-center">
+  <div>
+    <h1> <b>Our Restaurants</b></h1>
+  </div>
+</section>
+
+
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <img src="rest2.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <img src="restaurant1.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <img src="rest7.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <img src="rest33.jpg" class="card-img-top"
+           style="height: 500px; width: 100%; object-fit: cover;"/>
+    </div>
+  </div>
+</div>
+
+<br/>
+<hr/>
+
+<!--over view-->
+
+<section style="padding: 60px 40px; font-family: Arial, sans-serif; background-color: #f2f2f2;">
+  <div style="max-width: 900px; margin: auto; color: #333; text-align: center;">
+    <h2 style="font-size: 36px; margin-bottom: 25px; font-weight: bold;">
+      Majestic Palace Resort – Overview
+    </h2>
+
+    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 15px; font-weight: bold;">
+      Nestled in the heart of <strong>Sharm El Sheikh</strong>, 
+      <strong>Majestic Palace Resort</strong> is a luxurious haven overlooking the sparkling waters of the Red Sea.
+    </p>
+
+    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 15px; font-weight: bold;">
+      This <strong>All-Inclusive resort</strong> combines world-class hospitality with a variety of 
+      <strong>restaurants, bars, and entertainment venues</strong>. Guests can indulge in 
+      diverse dining experiences, relax in <strong>wellness facilities</strong>, and enjoy a wide range of 
+      <strong>sports activities</strong>.
+    </p>
+
+    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 30px; font-weight: bold;">
+      The resort offers <strong>stylish rooms and suites</strong> with direct access to a private beach, 
+      and state-of-the-art <strong>conference and banquet venues</strong> — perfect for both leisure and business travelers.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+      <div style="background: #007BFF; color: #fff; padding: 12px 25px; border-radius: 5px; font-weight: bold;">
+        18 km – Naama Bay
+      </div>
+      <div style="background: #007BFF; color: #fff; padding: 12px 25px; border-radius: 5px; font-weight: bold;">
+        25 km – Old Market
+      </div>
+      <div style="background: #007BFF; color: #fff; padding: 12px 25px; border-radius: 5px; font-weight: bold;">
+        9 km – Sharm El Sheikh Airport
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--rixos pic details-->
+    <section class="property-details py-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- الصورة -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="pool.jpg" alt="Hotel Property" class="img-fluid rounded">
+      </div>
+      
+      <!-- التفاصيل -->
+      <div class="col-md-6 text-white">
+        <h2>Property details</h2>
+
+        <div class="row mb-3">
+          <div class="col-6">
+            <h6>Location</h6>
+            <p>South Sinai, Nabq Bay<br>Egypt<br>
+              <a href="#">See on the map</a>
+            </p>
+          </div>
+          <div class="col-6">
+            <h6>Contact</h6>
+            <p>
+              Tel: +20 123456789<br>
+              Fax: +20 987654321<br>
+              <a href="mailto:info@hotel.com">Contact by email</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <h6>General information</h6>
+          <p>Check-in: 2:00pm<br>Check-out: 12:00am</p>
+        </div>
+
+        <div class="mb-3">
+          <h6>Hotel features</h6>
+          <ul class="features list-inline">
+            <li class="list-inline-item">🍴 Restaurant</li>
+            <li class="list-inline-item">🌐 Internet access</li>
+            <li class="list-inline-item">🚗 Car park</li>
+            <li class="list-inline-item">🏊 Swimming pool</li>
+            <li class="list-inline-item">🏋 Sports centre</li>
+            <li class="list-inline-item">🧖 Sauna</li>
+            <li class="list-inline-item">🎢 Water park</li>
+            <li class="list-inline-item">💼 Business centre</li>
+            <li class="list-inline-item">🛏 Private bathroom</li>
+            <li class="list-inline-item">🔥 Air conditioned</li>
+            <!-- ممكن تزودي أيقونات تانية -->
+          </ul>
+        </div>
+
+        <div class="mb-3">
+          <h6>All inclusive</h6>
+          <p>Meals, drinks and activities included.</p>
+        </div>
+
+        <div class="mb-3">
+          <h6>Accessibility</h6>
+          <p>Wheelchair accessible facilities.</p>
+        </div>
+
+        <div class="mb-3">
+          <h6>Sustainability</h6>
+          <p>Sustainably certified property.</p>
+        </div>
+
+        <button class="btn btn-outline-light mt-3">Become a Member</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo & About -->
+      <div class="col-md-3 mb-3 text-center">
+        <img src="hotel.jpg" alt="Hotel Logo" style="max-width:150px; margin-bottom:15px;">
+        
+        <h4 class="text-warning">Majestic Palace Resort</h4>
+        <p>Enjoy a luxurious stay with premium services in the heart of Sharm El Sheikh.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-warning">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Rooms</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Restaurant</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Reservations</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-warning">Contact Us</h5>
+        <p>📞 01554665425</p>
+        <p>📧 <a href="mailto:Roro792025@gmail.com" class="text-light text-decoration-none">Roro792025@gmail.com</a></p>
+        <div>
+          <a href="https://www.facebook.com/share/1GXUGd2sKi/?mibextid=wwXIfr" target="_blank" class="text-warning me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.tiktok.com/@roro.rory78?_t=ZS-90EtPspSQt7&_r=1" target="_blank" class="text-warning me-3">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-warning">Our Location</h5>
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55658.38987069245!2d34.30300692674819!3d27.915817225271166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14532b20f78e7c05%3A0x5a6a7e7d18a3f1a4!2sSharm%20El%20Sheikh%2C%20South%20Sinai%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1696354788000!5m2!1sen!2seg" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary mt-4">
+    <p class="text-center mb-0">© Majestic Palace Resort - Made by Reham muhamed</p>
+  </div>
+</footer>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* ==========================
+   Majestic Palace - Cleaned CSS
+   Created for Reham (Egyptian Arabic)
+   ========================== */
+
+/* Fonts: Cairo (sans) for body, Playfair Display for big headings */
+:root{
+  --mint: #cfeee6;
+  --dark: #1f1f1f;
+  --muted: #9b9b9b;
+  --font-sans: 'Cairo', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+/* Reset / basics */
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+body{
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Navbar / brand */
+.navbar {
+  background: var(--dark) !important;
+}
+.navbar-brand span {
+  color: #fff;
+}
+.brand-logo {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  display:inline-block;
+}
+
+/* Toggler custom icon and border */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.15);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Top square / menu */
+.menu-square{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 72px;
+  width: 68px;
+  height: 68px;
+  background: var(--mint);
+  border: none;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+
+/* Big book now rectangle */
+.book-rect{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  width: 260px;
+  padding: 18px 0;
+  background: var(--mint);
+  color: #0b0b0b;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  text-align: center;
+}
+
+/* HERO */
+.hero{
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+}
+.hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.03) saturate(1.02);
+}
+
+/* overlay for readability */
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.24), rgba(0,0,0,0.24));
+  pointer-events: none;
+}
+
+/* hero text block */
+.hero-content{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-45%);
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 1rem;
+  text-align: center;
+}
+.small-lead{
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  color: #e7e7e7;
+  margin-bottom: 0.75rem;
+}
+.hero-title{
+  font-family: var(--font-serif);
+  font-size: 64px;
+  margin: 0;
+  line-height: 0.95;
+  color: #fff;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.03);
+  letter-spacing: 1px;
+}
+
+/* Booking bar */
+.booking-bar{
+  background: #1b1b1b;
+  padding: 22px 0;
+  color: #ddd;
+  border-top: 1px solid rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.booking-bar .form-label { font-size: 11px; margin-bottom: .25rem; color: #ddd; }
+.booking-bar .form-select,
+.booking-bar .form-control{
+  color: #fff;
+  background: transparent;
+  border-color: rgba(255,255,255,0.08);
+}
+.booking-bar .form-select option { background: #222; color: #fff; }
+
+/* mint strip */
+.mint-strip{
+  background: var(--mint);
+  color: #0a0a0a;
+  letter-spacing: 4px;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* welcome section */
+.welcome .small { letter-spacing: 4px; color: var(--muted); margin-bottom: 0.5rem; }
+.welcome h2 { font-family: var(--font-serif); font-size: 44px; color: #222; margin-top: 1rem; }
+
+/* Cards/images consistent sizing */
+.card-img-top {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Property details panel */
+.property-details {
+  background: #e28f6b;
+  color: #eee;
+  padding: 40px 0;
+}
+.property-details h2,
+.property-details h6 { font-family: var(--font-serif); color: #fff; margin-bottom: 8px; }
+.property-details p,
+.property-details li { font-size: 14px; color: #f4f1f0; }
+.property-details a { color: var(--mint); text-decoration: none; }
+.property-details a:hover { text-decoration: underline; }
+.features li { margin-right: 15px; margin-bottom: 10px; display: inline-block; }
+
+/* image in property-details: responsive height */
+.property-details img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* hotel logo style (clean) */
+.hotel-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #f4c542;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Footer tweaks */
+footer a { color: inherit; text-decoration: none; }
+footer .text-warning { color: #f4c542 !important; }
+
+/* Accessibility & prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px){
+  .hero { height: 420px; }
+  .hero-title { font-size: 44px; }
+  .book-rect { top: 132px; width: 220px; }
+}
+@media (max-width: 576px){
+  .hero { height: 360px; }
+  .hero-title { font-size: 34px; }
+  .menu-square { top: 64px; }
+  .book-rect { top: 120px; width: 180px; padding: 12px 0; font-size: 14px; }
+  .property-details { padding: 24px 0; }
+}
